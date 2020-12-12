@@ -7,7 +7,13 @@
 int main(int argc, char *argv[]) {
     printf("Number of arguments: %d\n", argc);
 
-    for (int i = 0; i < argc; i++) {
-        printf("Command-line argument is: %s\n", argv[i]);
+    if (argc == 3)
+    {
+        for (int i = 0; i < argc; i++) {
+            printf("Command-line argument is: %s\n", argv[i]);
+        }
     }
+    else printf("Usage: ./main arg[0] arg[1]");
+
+    return 0;
 }
